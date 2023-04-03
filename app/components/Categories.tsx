@@ -1,13 +1,21 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 const Categories = () => {
+  const [activeButtonIndex, setActiveButtonIndex] = useState(0);
   return (
     <>
       <div className="mt-1 flex items-center justify-center gap-2">
         <div>
           <button
             title="All"
-            className="rounded-md bg-zinc-700 px-3 py-1 hover:bg-zinc-600 focus:bg-white focus:text-zinc-700"
+            className={`${
+              activeButtonIndex === 0
+                ? "bg-white text-zinc-700"
+                : "bg-zinc-700 text-white"
+            } rounded-md px-3 py-1`}
+            onClick={() => setActiveButtonIndex(0)}
           >
             All
           </button>
@@ -15,38 +23,68 @@ const Categories = () => {
         <div>
           <button
             title="Music"
-            className="rounded-md bg-zinc-700 px-3 py-1 hover:bg-zinc-600 focus:bg-white focus:text-zinc-700"
+            className={`${
+              activeButtonIndex === 1
+                ? "bg-white text-zinc-700"
+                : "bg-zinc-700 text-white"
+            } rounded-md px-3 py-1`}
+            onClick={() => setActiveButtonIndex(1)}
           >
             Music
           </button>
         </div>
         <button
           title="Live"
-          className="rounded-md bg-zinc-700 px-3 py-1 hover:bg-zinc-600 focus:bg-white focus:text-zinc-700"
+          className={`${
+            activeButtonIndex === 2
+              ? "bg-white text-zinc-700"
+              : "bg-zinc-700 text-white"
+          } rounded-md px-3 py-1`}
+          onClick={() => setActiveButtonIndex(2)}
         >
           Live
         </button>
         <button
           title="Gaming"
-          className="rounded-md bg-zinc-700 px-3 py-1 hover:bg-zinc-600 focus:bg-white focus:text-zinc-700"
+          className={`${
+            activeButtonIndex === 3
+              ? "bg-white text-zinc-700"
+              : "bg-zinc-700 text-white"
+          } rounded-md px-3 py-1`}
+          onClick={() => setActiveButtonIndex(3)}
         >
           Gaming
         </button>
         <button
           title="Chill-out music"
-          className="rounded-md bg-zinc-700 px-3 py-1 hover:bg-zinc-600 focus:bg-white focus:text-zinc-700"
+          className={`${
+            activeButtonIndex === 4
+              ? "bg-white text-zinc-700"
+              : "bg-zinc-700 text-white"
+          } rounded-md px-3 py-1`}
+          onClick={() => setActiveButtonIndex(4)}
         >
           Chill-out music
         </button>
         <button
           title="History"
-          className="rounded-md bg-zinc-700 px-3 py-1 hover:bg-zinc-600 focus:bg-white focus:text-zinc-700"
+          className={`${
+            activeButtonIndex === 5
+              ? "bg-white text-zinc-700"
+              : "bg-zinc-700 text-white"
+          } rounded-md px-3 py-1`}
+          onClick={() => setActiveButtonIndex(5)}
         >
           History
         </button>
         <button
           title="Driving"
-          className="rounded-md bg-zinc-700 px-3 py-1 hover:bg-zinc-600 focus:bg-white focus:text-zinc-700"
+          className={`${
+            activeButtonIndex === 6
+              ? "bg-white text-zinc-700"
+              : "bg-zinc-700 text-white"
+          } rounded-md px-3 py-1`}
+          onClick={() => setActiveButtonIndex(6)}
         >
           Driving
         </button>
