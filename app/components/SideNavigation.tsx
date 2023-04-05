@@ -48,7 +48,7 @@ const SideNavigation = () => {
   return (
     <>
       {isAboveSizeScreen ? (
-        <div className="-mt-8 bg-zinc-900">
+        <aside className="-mt-8 h-full bg-zinc-900	">
           <div className="divide-y divide-zinc-600">
             <div className="pb-3">
               <span className="flex items-center pl-3 pr-5">
@@ -177,7 +177,7 @@ const SideNavigation = () => {
               </div>
             </div>
           </div>
-        </div>
+        </aside>
       ) : (
         <>
           <div className="-mt-8 border-2 border-orange-300">

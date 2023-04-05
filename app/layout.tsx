@@ -20,10 +20,16 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-zinc-900 text-zinc-200">
         <div className="flex h-screen w-screen flex-col">
-          <TopNavigation />
+          <div className="fixed flex h-28 w-screen flex-col bg-zinc-900 text-zinc-200">
+            <TopNavigation />
+          </div>
           <div className="flex flex-1">
-            <SideNavigation />
-            {children}
+            <div className="fixed top-32 h-full">
+              <SideNavigation />
+            </div>
+            <div className="ml-60 mt-28 flex w-full justify-center">
+              {children}
+            </div>
           </div>
         </div>
       </body>

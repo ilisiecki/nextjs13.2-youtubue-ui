@@ -10,6 +10,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        screenS: "640px",
+        screenM: "1128px",
+        screenL: "1312px",
+        screenXL: "1631px",
+        screenXXL: "1966px",
+        screenXXXL: "2304px",
+      },
       colors: {
         "red-yt": "#FF0000",
         "blue-yt": "#3ea6ff",
@@ -17,5 +25,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
