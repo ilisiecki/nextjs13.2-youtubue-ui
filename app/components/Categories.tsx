@@ -13,7 +13,7 @@ const Categories = () => {
             className={`${
               activeButtonIndex === 0
                 ? "bg-white text-zinc-700"
-                : "bg-zinc-700 text-white"
+                : "bg-zinc-700 text-white hover:bg-zinc-600"
             } rounded-md px-3 py-1`}
             onClick={() => setActiveButtonIndex(0)}
           >
@@ -26,7 +26,7 @@ const Categories = () => {
             className={`${
               activeButtonIndex === 1
                 ? "bg-white text-zinc-700"
-                : "bg-zinc-700 text-white"
+                : "bg-zinc-700 text-white transition duration-300 hover:bg-zinc-600"
             } rounded-md px-3 py-1`}
             onClick={() => setActiveButtonIndex(1)}
           >
