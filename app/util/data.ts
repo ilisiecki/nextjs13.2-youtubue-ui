@@ -3,6 +3,7 @@ interface IFeedVideo {
   thumbnailUrl: string;
   channelName: string;
   channelImageUrl: string;
+  time: string;
   title: string;
   viewCount: string;
   verified: boolean;
@@ -17,6 +18,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "International Cat",
     channelImageUrl:
       "https://yt3.ggpht.com/ytc/AL5GRJXP6XLPF_4SkcLla0Aod_Car4CGtbIuWx0olGdN4Q=s68-c-k-c0x00ffffff-no-rj",
+    time: "13:05",
     title:
       "1 HOUR FUNNY CATS COMPILATION 2022😂| Cute And Lovely Cat Videos 2022😹",
     viewCount: "2.2M",
@@ -30,6 +32,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "NoCAT NoLIFE 2",
     channelImageUrl:
       "https://yt3.ggpht.com/_W5BHA7Qzp7cMAmK213CytdfkOzV7cfXYfxqfnYxABqxjZowlQnkFTs_2HqLRiIsiYzkpyK_CEk=s68-c-k-c0x00ffffff-no-rj",
+    time: "10:37",
     title: "Funny Cats Compilation (Most Popular) Part 1",
     viewCount: "20M",
     verified: false,
@@ -42,6 +45,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "Cat's diary",
     channelImageUrl:
       "https://yt3.ggpht.com/ytc/AL5GRJUZMmnSDg7MWbdroDHwsX-XVv2aUDityipX19po=s68-c-k-c0x00ffffff-no-rj",
+    time: "13:37",
     title: "Cute kitten invites ducklings to play together!",
     viewCount: "65K",
     verified: true,
@@ -54,6 +58,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "Aww Pets",
     channelImageUrl:
       "https://yt3.ggpht.com/VRXdaBb22aR2iO_OQHHSoNJcaRbmG14cqNHWdKBhp-tTDZSuPLjfT0wZquJ7M373j5i92oNxnw=s68-c-k-c0x00ffffff-no-rj",
+    time: "37:31",
     title: "Funniest Animals 2022 😂 Funniest Cats and Dogs 😺🐶 |Aww Pets",
     viewCount: "384K",
     verified: true,
@@ -66,6 +71,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "ITSUKA JAPAN",
     channelImageUrl:
       "https://yt3.ggpht.com/ytc/AL5GRJWf3DyTG2mylZkUNBCpN2neY1fhVvghWyGe3mBViw=s68-c-k-c0x00ffffff-no-rj",
+    time: "6:52",
     title:
       "I visited Japan Cat Island, where there are more cats than people, Elderly people and cats coexis",
     viewCount: "51K",
@@ -79,6 +85,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "Happy dog",
     channelImageUrl:
       "https://yt3.ggpht.com/lVjmNBpwL7SCNjUmzSwvXbgJ9gvaGp_47r5DeQTCx5Zv82fPB94nVrY8J-oR0AKv8lJqdK6cs8g=s68-c-k-c0x00ffffff-no-rj",
+    time: "2:02",
     title: "Funny animals - Funny cats / dogs - Funny animal videos 236",
     viewCount: "10K",
     verified: false,
@@ -91,6 +98,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "Munchkin",
     channelImageUrl:
       "https://yt3.ggpht.com/05mZIO9zBPSOwSIsdEGmcWijQRSsCxsZQ5Fw6HbvbFuuu42cx-IpWrFKhq0F88ZE6A-0xt0v0w=s68-c-k-c0x00ffffff-no-rj",
+    time: "2:25:32",
     title: "What Can't Cats Walk On? #4",
     viewCount: "3.2M",
     verified: false,
@@ -103,6 +111,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "Fails 4 Fun",
     channelImageUrl:
       "https://yt3.ggpht.com/ytc/AL5GRJXJRaDKgF3G2ceBenFldkfZvCvtrEGgE9K-pq9b=s68-c-k-c0x00ffffff-no-rj",
+    time: "16:43",
     title: "Funniest Moment Between Raccoons And Cats|| FUNNY VIDEO",
     viewCount: "34M",
     verified: false,
@@ -115,6 +124,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "Walter Santi",
     channelImageUrl:
       "https://yt3.ggpht.com/E2Dz3Y2LDe6wwbC6vy_SSq0KedgXsAitjetzO4J4xrCu_5CJW2b672Q8BiwPgIAb17TnPw56Tg=s68-c-k-c0x00ffffff-no-rj",
+    time: "6:53",
     title: "Two Cats and 500 Balls in a Ball Pit !!",
     viewCount: "1.1M",
     verified: true,
@@ -127,6 +137,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "The Animals",
     channelImageUrl:
       "https://yt3.ggpht.com/ytc/AL5GRJX5A0wsrOXRZ0eKsy1CNfTBDY_lHSxx1CoSP-raqw=s68-c-k-c0x00ffffff-no-rj",
+    time: "8:11",
     title: "FuNNY cAt Compilation #12",
     viewCount: "22K",
     verified: true,
@@ -139,7 +150,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "cutexhell",
     channelImageUrl:
       "https://yt3.ggpht.com/ytc/AL5GRJWYV58D-3oWwoFUxYmmrRRRzA0RhZ25GlVL91rYSg=s68-c-k-c0x00ffffff-no-rj",
-
+    time: "1:09",
     title: "Cats (speed up!)",
     viewCount: "247",
     verified: false,
@@ -152,6 +163,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "Tom and Mimi",
     channelImageUrl:
       "https://yt3.ggpht.com/ytc/AL5GRJWyeCnrai4tb2vZR-o126C_WCixxrNR-ZQzX8ov=s68-c-k-c0x00ffffff-no-rj",
+    time: "23:50",
     title: "Neighbour's Cat Entertains My Cats",
     viewCount: "2.7K",
     verified: true,
@@ -164,6 +176,7 @@ export const feedVideos: Array<IFeedVideo> = [
     channelName: "funnyplox",
     channelImageUrl:
       "https://yt3.ggpht.com/eJ71cjka7EZJf7lAWlPccXcfL7OjWatxC4DU43Sqjuu86Vc7a1eXQD3p1Et1B0BlJuGv8cXFQA=s68-c-k-c0x00ffffff-no-rj",
+    time: "7:21",
     title: "Funny Cats and Kittens Meowing Compilation",
     viewCount: "4.7K",
     verified: true,

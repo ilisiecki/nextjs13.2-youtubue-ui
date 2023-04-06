@@ -43,7 +43,8 @@ export default function Home() {
   });
 
   return (
-    <div>
+    <div className="w-full border-2 border-purple-500">
+      <VideoSection numberOfVideosToDisplay={numberOfVideosToDisplay} />
       <VideoSection numberOfVideosToDisplay={numberOfVideosToDisplay} />
     </div>
   );

@@ -6,7 +6,7 @@ const Categories = () => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(0);
   return (
     <>
-      <div className="mt-1 flex items-center justify-center gap-2">
+      <div className="mt-4 flex items-center justify-center gap-2">
         <div>
           <button
             title="All"

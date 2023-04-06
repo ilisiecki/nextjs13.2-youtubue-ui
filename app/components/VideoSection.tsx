@@ -6,24 +6,27 @@ type Props = { numberOfVideosToDisplay: number };
 
 const VideoSection = (props: Props) => {
   return (
-    <div className="flex flex-row gap-4 p-12">
+    <div className="flex flex-row justify-center gap-4 border-2 border-cyan-400 px-10 pt-6">
       {feedVideos
         .filter((video) => video.id < props.numberOfVideosToDisplay)
         .map((filteredVideo) => (
           <>
-            <div key={filteredVideo.id} className="border-2 border-red-500">
-              <div className="border-2 border-blue-500">
+            <div key={filteredVideo.id} className="">
+              <div className="group relative cursor-pointer">
                 <Image
                   src={filteredVideo.thumbnailUrl}
                   width={360}
                   height={203}
                   alt="thumbnail"
-                  className="rounded-lg"
+                  className="rounded-xl transition-all duration-300 hover:rounded-none"
                 />
+                <div className="absolute bottom-0 right-0 mr-1 mb-1 items-center justify-center rounded-md bg-zinc-900/90 px-1 pb-0.5 text-xs font-bold text-white transition-all duration-300 group-hover:opacity-0">
+                  {filteredVideo.time}
+                </div>
               </div>
-              <div className="border-500-yellow relative border-2">
+              <div className="relative border-2 border-yellow-500">
                 <div className="flex flex-row">
-                  <div className="mt-3 h-[36px] w-[36px] shrink-0 border-2 border-orange-500">
+                  <div className="mt-2 h-[36px] w-[36px] shrink-0 border-2 border-orange-500">
                     <Image
                       src={filteredVideo.channelImageUrl}
                       height={36}
@@ -32,7 +35,7 @@ const VideoSection = (props: Props) => {
                       className="rounded-full"
                     />
                   </div>
-                  <div className="ml-2 mt-3 flex w-64 flex-col border-2 border-green-500">
+                  <div className="ml-2 mt-2 flex w-64 flex-col border-2 border-green-500">
                     <div className="group flex cursor-pointer items-start justify-between">
                       <span className="pb-0.5 font-semibold leading-normal text-white line-clamp-2">
                         {filteredVideo.title}

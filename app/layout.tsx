@@ -24,10 +24,10 @@ export default function RootLayout({
             <TopNavigation />
           </div>
           <div className="flex flex-1">
-            <div className="fixed top-32 h-full">
+            <div className="fixed top-24 h-full">
               <SideNavigation />
             </div>
-            <div className="ml-60 mt-28 flex w-full justify-center">
+            <div className="mt-[7rem] ml-60 flex w-full justify-center">
               {children}
             </div>
           </div>

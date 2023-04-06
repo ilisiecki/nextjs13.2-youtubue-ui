@@ -51,7 +51,7 @@ const SideNavigation = () => {
         <aside className="-mt-8 h-full bg-zinc-900	">
           <div className="divide-y divide-zinc-600">
             <div className="pb-3">
-              <span className="flex items-center pl-3 pr-5">
+              <span className="flex items-center pl-3 pr-2">
                 <button
                   className={`${
                     activeButtonIndex === 0 ? "bg-zinc-700" : "bg-zinc-900"

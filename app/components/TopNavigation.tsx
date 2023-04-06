@@ -22,7 +22,7 @@ const TopNavigation = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between p-4">
+      <div className="flex items-center justify-between px-4 pt-2">
         <div className="mr-24 flex items-center gap-4">
           <button className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-zinc-600">
             <svg
@@ -78,7 +78,7 @@ const TopNavigation = () => {
             </div>
           </div>
         </div>
-        <div className="hidden h-10 w-[35rem] sm:flex">
+        <div className="hidden h-10 w-[41rem] sm:flex">
           <div className="flex w-full">
             {isActive === true ? (
               <>
