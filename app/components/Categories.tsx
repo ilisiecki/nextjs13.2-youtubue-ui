@@ -56,7 +56,7 @@ const Categories = () => {
           Gaming
         </button>
         <button
-          title="Chill-out music"
+          title="Chill"
           className={`${
             activeButtonIndex === 4
               ? "bg-white text-zinc-700"
@@ -64,7 +64,7 @@ const Categories = () => {
           } rounded-md px-3 py-1`}
           onClick={() => setActiveButtonIndex(4)}
         >
-          Chill-out music
+          Chill
         </button>
         <button
           title="History"

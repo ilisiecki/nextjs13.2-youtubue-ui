@@ -27,7 +27,7 @@ export default function RootLayout({
             <div className="fixed top-24 h-full">
               <SideNavigation />
             </div>
-            <div className="mt-[7rem] ml-60 flex w-full justify-center">
+            <div className="mt-[7rem] flex w-full justify-center">
               {children}
             </div>
           </div>

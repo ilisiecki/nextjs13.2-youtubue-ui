@@ -29,9 +29,9 @@ export default function Home() {
     } else if (isAboveSizeScreenX) {
       setNumberOfVideosToDisplay(3);
     } else if (isAboveSizeScreenM) {
-      setNumberOfVideosToDisplay(2);
+      setNumberOfVideosToDisplay(3);
     } else if (isAboveSizeScreenS) {
-      setNumberOfVideosToDisplay(1);
+      setNumberOfVideosToDisplay(2);
     } else {
       setNumberOfVideosToDisplay(1);
     }
@@ -43,9 +43,14 @@ export default function Home() {
   });
 
   return (
-    <div className="w-full border-2 border-purple-500">
+    <div className="w-full">
       <VideoSection numberOfVideosToDisplay={numberOfVideosToDisplay} />
-      <VideoSection numberOfVideosToDisplay={numberOfVideosToDisplay} />
+      <NextVideoSection
+        numberOfVideosToDisplay={numberOfVideosToDisplay}
+        numberOfVideosToDisplayForNextSection={
+          numberOfVideosToDisplayForNextSection
+        }
+      />
     </div>
   );
 }

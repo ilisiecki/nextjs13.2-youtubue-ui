@@ -10,10 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        xxs: "0.65rem",
+      },
       screens: {
         screenS: "640px",
+        screenT: "657px",
+        screenSM: "792px",
         screenM: "1128px",
-        screenL: "1312px",
+        screenL: "1313px",
         screenXL: "1631px",
         screenXXL: "1966px",
         screenXXXL: "2304px",
