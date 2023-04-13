@@ -1,3 +1,5 @@
+"use client";
+
 export default function Shorts() {
-  return <div>Shorts</div>;
+  return <div className="mt-12">hey hey</div>;
 }

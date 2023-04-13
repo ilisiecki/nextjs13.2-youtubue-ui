@@ -20,14 +20,14 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-zinc-900 text-zinc-200">
         <div className="flex h-screen w-screen flex-col">
-          <div className="fixed flex h-28 w-screen flex-col bg-zinc-900 text-zinc-200">
+          <div className="fixed z-50 flex h-28 w-screen flex-col bg-zinc-900 text-zinc-200">
             <TopNavigation />
           </div>
           <div className="flex flex-1">
             <div className="fixed top-24 h-full">
               <SideNavigation />
             </div>
-            <div className="mt-[7rem] flex w-full justify-center">
+            <div className="z-0 mt-[7rem] flex w-full justify-center">
               {children}
             </div>
           </div>
