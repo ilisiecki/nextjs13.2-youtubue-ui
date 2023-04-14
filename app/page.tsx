@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import VideoSection from "./components/VideoSection";
 import NextVideoSection from "./components/NextVideoSection";
+import { useStore } from "./(store)/store";
 
 export default function Home() {
   const isAboveSizeScreenXXXL = useMediaQuery("(min-width: 2304px)");
@@ -19,13 +20,19 @@ export default function Home() {
     setNumberOfVideosToDisplayForNextSection,
   ] = useState(0);
 
+  const [isMenuOpen] = useStore((state) => [state.isMenuOpen]);
+
   function numberOfVideosFromMediaQuerry() {
     if (isAboveSizeScreenXXXL) {
       setNumberOfVideosToDisplay(6);
     } else if (isAboveSizeScreenXXL) {
       setNumberOfVideosToDisplay(5);
     } else if (isAboveSizeScreenXL) {
-      setNumberOfVideosToDisplay(4);
+      if (isMenuOpen === false) {
+        setNumberOfVideosToDisplay(5);
+      } else {
+        setNumberOfVideosToDisplay(4);
+      }
     } else if (isAboveSizeScreenX) {
       setNumberOfVideosToDisplay(3);
     } else if (isAboveSizeScreenM) {
