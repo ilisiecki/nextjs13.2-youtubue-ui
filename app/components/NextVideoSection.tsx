@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { feedVideos } from "../util/data";
+import { useStore } from "../(store)/store";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 export type Props = {
   numberOfVideosToDisplay: number;
@@ -8,8 +10,26 @@ export type Props = {
 };
 
 const NextVideoSection = (props: Props) => {
+  const isAboveSizeScreen = useMediaQuery("(min-width: 1313px)");
+  const [changeMargin, setChangeMargin] = useState(false);
+  const [isMenuOpen] = useStore((state) => [state.isMenuOpen]);
+
+  useEffect(() => {
+    if (isAboveSizeScreen) {
+      setChangeMargin(true);
+    } else {
+      setChangeMargin(false);
+    }
+  }, [isAboveSizeScreen, setChangeMargin]);
+
   return (
-    <div className="ml-0 flex flex-row justify-center gap-4 px-10 pt-6 screenSM:ml-20 screenL:ml-60">
+    <div
+      className={`${
+        isMenuOpen && changeMargin
+          ? "ml-60 flex flex-row justify-center gap-4 px-10 pt-6"
+          : "ml-20 flex flex-row justify-center gap-4 px-10 pt-6"
+      }`}
+    >
       {feedVideos
         .filter(
           (video) =>

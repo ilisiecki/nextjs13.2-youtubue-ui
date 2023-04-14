@@ -4,11 +4,19 @@ import React, { useState } from "react";
 import Categories from "./Categories";
 import DropdownDots from "./DropdownDots";
 import DialogMic from "./DialogMic";
+import { useStore } from "../(store)/store";
 
 const TopNavigation = () => {
   const [isActive, setIsActive] = useState(false);
   const [isFocus, setIsFocus] = useState(false);
   const [isBlur, setIsBlur] = useState(false);
+
+  const [isMenuOpen, setMenuOpen, setMenuClose, setMenu] = useStore((state) => [
+    state.isMenuOpen,
+    state.setMenuOpen,
+    state.setMenuClose,
+    state.setMenu,
+  ]);
 
   const focusHandler = (event: React.FocusEvent<HTMLInputElement>) => {
     setIsFocus(true);
@@ -26,7 +34,10 @@ const TopNavigation = () => {
     <>
       <div className="flex items-center justify-between px-4 pt-2">
         <div className="mr-24 flex items-center gap-4">
-          <button className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-zinc-600">
+          <button
+            className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-zinc-600"
+            onClick={setMenu}
+          >
             <svg
               viewBox="0 0 24 24"
               width={24}

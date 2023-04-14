@@ -84,7 +84,7 @@ const DialogMic = (props: Props) => {
               >
                 <Dialog.Panel className="flex w-[36rem] flex-col bg-zinc-800 p-6 text-left shadow-xl transition-all">
                   <button
-                    className="absolute right-0 top-0 m-2 flex items-center justify-center rounded-full p-4 text-white hover:bg-zinc-500"
+                    className="absolute right-0 top-0 m-2 flex items-center justify-center rounded-full p-2.5 text-white hover:bg-zinc-500"
                     onClick={closeModal}
                   >
                     <RxCross1 size="1.2em" />

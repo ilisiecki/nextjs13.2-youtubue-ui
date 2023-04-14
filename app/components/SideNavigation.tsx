@@ -1,9 +1,10 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { HiOutlineUserCircle } from "react-icons/Hi";
+import { useStore } from "../(store)/store";
 
 interface MenuItem {
   index: number;
@@ -45,9 +46,24 @@ const SideNavigation = () => {
     router.push(MenuItems[index].pathName);
   };
 
+  const [isMenuOpen, setMenuOpen, setMenuClose] = useStore((state) => [
+    state.isMenuOpen,
+    state.setMenuOpen,
+    state.setMenuClose,
+  ]);
+
+  useEffect(() => {
+    if (isAboveSizeScreen) {
+      console.log("Mam wiecej niz 1313px");
+      setMenuOpen();
+    } else {
+      setMenuClose();
+    }
+  }, [isAboveSizeScreen, setMenuOpen, setMenuClose]);
+
   return (
     <>
-      {isAboveSizeScreen ? (
+      {isAboveSizeScreen && isMenuOpen ? (
         <aside className="-mt-8 h-full bg-zinc-900	">
           <div className="divide-y divide-zinc-600">
             <div className="pb-3">
@@ -298,6 +314,7 @@ const SideNavigation = () => {
           </div>
         </aside>
       )}
+      {isAboveSizeScreen ? <></> : <></>}
     </>
   );
 };
