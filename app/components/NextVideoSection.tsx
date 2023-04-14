@@ -27,7 +27,7 @@ const NextVideoSection = (props: Props) => {
       className={`${
         isMenuOpen && changeMargin
           ? "ml-60 flex flex-row justify-center gap-4 px-10 pt-6"
-          : "ml-20 flex flex-row justify-center gap-4 px-10 pt-6"
+          : "ml-0 flex flex-row justify-center gap-4 px-10 pt-6 screenT:ml-20"
       }`}
     >
       {feedVideos
