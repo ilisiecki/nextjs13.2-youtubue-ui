@@ -1,4 +1,4 @@
-import { HiOutlineUserCircle } from "react-icons/Hi";
+import { HiOutlineUserCircle } from "react-icons/hi";
 
 export default function History() {
   return (

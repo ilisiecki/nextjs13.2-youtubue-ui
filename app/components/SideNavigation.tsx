@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
-import { HiOutlineUserCircle } from "react-icons/Hi";
+import { HiOutlineUserCircle } from "react-icons/hi";
 import { useStore } from "../(store)/store";
 import DialogMenu from "./DialogMenu";
 

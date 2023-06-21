@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { useStore } from "../(store)/store";
-import { HiOutlineUserCircle } from "react-icons/Hi";
+import { HiOutlineUserCircle } from "react-icons/hi";
 import { usePathname, useRouter } from "next/navigation";
 
 type Props = {};
