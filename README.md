@@ -1,7 +1,8 @@
 
 # [Youtube Ui](https://nextjs13-2-youtubue-ui.vercel.app/)
 
-[![YoutubeUi](https://nextjs13-2-youtubue-ui.vercel.app/)
+[![YoutubeUi](./public/images/screenshot/youtube-ui-landing-page-screenshot.png)](https://nextjs13-2-youtubue-ui.vercel.app/)
+
 
 ## Description
 
