@@ -26,7 +26,7 @@ An interesting thing about this project was that I created a number of YouTube f
 
 ```bash
 git clone https://github.com/ilisiecki/nextjs13.2-youtubue-ui.git
-``
+```
 
 ### 2. Install dependencies
 
