@@ -1,35 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# [Youtube Ui](https://nextjs13-2-youtubue-ui.vercel.app/)
 
-First, run the development server:
+[![YoutubeUi](https://nextjs13-2-youtubue-ui.vercel.app/)
+
+## Description
+
+My goal for this app was to create a front-end copy of the YouTube application. I was trying to achieve not only the same look but also to re-create the behavior of the website and its individual components. It was my first time using Next.js with the App Router which was still in beta at that moment. The App Router functionality changes a lot and I wanted to learn it and understand it as soon as possible. Of course this is just  a copy of a few elements that I wanted to recreate. This project is not complete, however, it was a valuable learning experience on recreating an existing application using a tech stack that I was interested in. 
+
+An interesting thing about this project was that I created a number of YouTube features and components using Tailwind only. From the curiosity of my job about this project I can say that I was able to recreate a lot of things really well using only basic Tailwind. Which isn't that obvious because I'm pretty sure youtube is not using Tailwind in their code, at least not yet.
+
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [Headlessui](https://headlessui.com/)
+
+
+## Installation
+
+### 1. Clone the repository
+
+
+```bash
+git clone https://github.com/ilisiecki/nextjs13.2-youtubue-ui.git
+``
+
+### 2. Install dependencies
+
+
+```bash
+npm install
+```
+
+### 3. Run the application
+
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
+
+### 4. View the application
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
